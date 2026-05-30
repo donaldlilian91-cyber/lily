@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111827;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#A855F7;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero h2{
+    color:#22C55E;
+    margin:15px 0;
+}
+
+.description{
+    max-width:700px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.btn{
+    background:#A855F7;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.btn-outline{
+    border:2px solid #22C55E;
+    color:#22C55E;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:10px;
+    margin-left:15px;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    color:#F59E0B;
+    margin-bottom:25px;
+}
+
+.stats,
+.skill-grid,
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card,
+.skill-card,
+.project-card,
+.stat-card{
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:15px;
+
+    padding:25px;
+
+    transition:.3s;
+}
+
+.card:hover,
+.skill-card:hover,
+.project-card:hover,
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 30px rgba(168,85,247,.35);
+}
+.hero-icons{
+    margin-top:30px;
+    font-size:2rem;
+}
+
+.hero-icons span{
+    margin:0 15px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+.circle{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    z-index:-1;
+
+}
+
+.one{
+    width:250px;
+    height:250px;
+    background:#a855f7;
+    top:100px;
+    left:-80px;
+}
+
+.two{
+    width:300px;
+    height:300px;
+    background:#22c55e;
+    bottom:50px;
+    right:-100px;
+}
+
+.three{
+    width:180px;
+    height:180px;
+    background:#f59e0b;
+    top:50%;
+    left:60%;
+}
+
+
+.skill-card{
+    text-align:center;
+    font-weight:bold;
+
+}
+.bar{
+    width:100%;
+    height:10px;
+    background:#333;
+    border-radius:10px;
+}
+
+.fill{
+    height:100%;
+    border-radius:10px;
+}
+
+.python{
+    width:85%;
+    background:#a855f7;
+}
+
+.ml{
+    width:75%;
+    background:#22c55e;
+}
+.stat-card{
+    text-align:center;
+}
+.whatsapp-float{
+
+    position:fixed;
+
+    width:60px;
+
+    height:60px;
+
+    bottom:25px;
+
+    right:25px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+
+    z-index:1000;
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+}
+.quote{
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    font-style:italic;
+
+    color:#F59E0B;
+
+    margin-top:20px;
+
+    letter-spacing:1px;
+}
+.skill-card{
+
+    text-align:center;
+
+    padding:25px;
+}
+
+.skill-card i{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+    color:#A855F7;
+}
+
+.skill-card h3{
+
+    color:white;
+}
+
+.stat-card h3{
+    color:#22C55E;
+    font-size:2rem;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+}
+
